@@ -45,6 +45,26 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 10em 1em 1em 1em;
       }
+      h1 {
+        font:
+          1em "typewriter",
+          monospace;
+        align-self: end;
+      }
+
+      #message {
+        grid-row: 1 / 5;
+      }
+
+      #from,
+      #reply {
+        display: flex;
+      }
+      label {
+        font:
+          0.8em "typewriter",
+          sans-serif;
+      }
     </style>
   </head>
 
