@@ -1,0 +1,41 @@
+/* Import fonts */
+@font-face {
+    font-family: 'Soria';
+    src: url('fonts/Soria-Soria.woff2') format('woff2'),
+        url('fonts/Soria-Soria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* General setup */
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+  font-family: "Soria", serif;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: "Soria", serif;
+}
+
+p {
+  font-size: 1.4rem;
+  font-family: "Faculty Glyphic", serif;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}
