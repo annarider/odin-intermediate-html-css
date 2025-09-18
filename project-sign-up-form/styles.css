@@ -24,7 +24,7 @@
 
 body {
     font-family: 'Faculty Glyphic', Helvetica, sans-serif;
-    color: rgba(247, 248,	250, 0);
+    color: #455A64;
     height: 100vh;
     display: flex;
 }
@@ -102,9 +102,6 @@ img.logo {
 .sign-up-section {
     margin-bottom: 20px;
     width: 100%;
-    background: white;
-    padding: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sign-up-title {
@@ -123,8 +120,10 @@ img.logo {
 }
 
 .sign-up-inputs {
-    /* display: flex; */
     width: 100%;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sign-up-form > div {
@@ -200,7 +199,7 @@ input:focus::placeholder {
 
 /* Submit Button */
 .submit {
-    background-color: #596D48;
+    background-color: #00796B;
     color: white;
     border: none;
     padding: 15px 40px;
@@ -212,7 +211,7 @@ input:focus::placeholder {
 }
 
 .submit:hover {
-    background-color: #4a5a3c;
+    background-color: #009688;
 }
 
 /* Login Link */
@@ -220,14 +219,15 @@ input:focus::placeholder {
     width: 100%;
 }
 
-.login {
-    color: #596D48;
+.login-link {
+    color: #00796B;
     text-decoration: none;
     font-weight: bold;
 }
 
-.login:hover {
+.login-link:hover {
     text-decoration: underline;
+    color: #009688;
 }
 
 /* Responsive Design */
