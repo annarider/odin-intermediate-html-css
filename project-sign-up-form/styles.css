@@ -1,11 +1,27 @@
 /* General Styles */
+@font-face {
+    font-family: 'Faculty Glyphic';
+    src: url('facultyglyphic-webfont.woff2') format('woff2'),
+         url('facultyglyphic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Ribeye';
+    src: url('ribeye-webfont.woff2') format('woff2'),
+         url('ribeye-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 html, button, input, select, textarea {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-family: 'Faculty Glyphic', Helvetica, sans-serif;
     color: #666;
 }
 button, input, select, textarea {
