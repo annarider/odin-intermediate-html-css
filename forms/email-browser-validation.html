@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Collect emails</title>
+    <style>
+      body {
+        font: 1em sans-serif;
+        width: 200px;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      p * {
+        display: block;
+      }
+
+      input[type="email"] {
+        appearance: none;
+
+        width: 100%;
+        border: 1px solid #333333;
+        margin: 0;
+
+        font-family: inherit;
+        font-size: 90%;
+
+        box-sizing: border-box;
+      }
+
+      /* invalid fields */
+      input:invalid {
+        border-color: #990000;
+        background-color: #ffdddd;
+      }
+
+      input:focus:invalid {
+        outline: none;
+      }
+
+      /* error message styles */
+      .error {
+        width: 100%;
+        padding: 0;
+
+        font-size: 80%;
+        color: white;
+        background-color: #990000;
+        border-radius: 0 0 5px 5px;
+
+        box-sizing: border-box;
+      }
+
+      .error.active {
+        padding: 0.3em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>browser's automatic validation</h1>
+    <form>
+      <label for="mail">
+        I would like you to provide me with an email address:
+      </label>
+      <input type="email" id="mail" name="mail" />
+      <br>
+      <label for="example-mail">Email address (@example.com only):</label>
+      <input type="email" id="example-mail" />
+      <button>Submit</button>
+    </form>
+  </body>
+  <script>
+    const email = document.getElementById("mail");
+    
+    email.addEventListener("input", (event) => {
+      if (email.validity.typeMismatch) {
+        email.setCustomValidity("I am expecting an email address!");
+      } else {
+        email.setCustomValidity("");
+      }
+    });
+    
+    const exampleEmail = document.getElementById("example-mail");
+
+    exampleEmail.addEventListener("input", (event) => {
+      // Validate with the built-in constraints
+      exampleEmail.setCustomValidity("");
+      if (!exampleEmail.validity.valid) {
+        return;
+      }
+
+      // Extend with a custom constraints
+      if (!exampleEmail.value.endsWith("@example.com")) {
+        exampleEmail.setCustomValidity("Please enter an email address of @example.com");
+      }
+    });
+  </script>
+</html>
