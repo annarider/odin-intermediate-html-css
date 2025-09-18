@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='styles.css'/>
+  <title>Sign up for Garlic Delight's newsletter</title>
+</head>
+<body>
+  <div class="sidebar"></div>
+  <div class="main">
+    <h2>Sign up for Garlic Delight's email newsletter.</h2>
+    <p class="subhead">Get dinner ideas for busy parents</p>
+    <div class="sign-up-section">
+      <h1 class="sign-up-title">Let's do this!</h1>
+      <form id="sign-up-form" class="sign-up-form">
+        <div class="form-firstname">
+          <input id="firstname" placeholder="First Name *" name="firstname" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+          <label for="firstname" data-help="For example, Anna">First name</label>
+        </div>
+        <div class="form-lastname">
+        <input id="lastname" placeholder="Last Name" name="lastname" type="text" value="" size="30" maxlength="245" required>
+          <label for="lastname" data-help="For example, Rider">Last name</label>
+        </div>
+        <div class="form-email">
+          <input id="email" placeholder="abc@example.com" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required>
+          <label for="email" data-help="Format email@example.com">Email</label>
+        </div>
+        <div class="form-phone">
+          <input id="phone" placeholder="+1 234 567 8901" name="phone" type="tel" value="" size="30" maxlength="200">
+          <label for="phone" data-help="Phone number with country and area code"> Phone number</label>
+        </div>
+        <div class="form-password">
+        <input id="password" placeholder="Enter strong password" name="password" type="password" value="" size="30" maxlength="245" required>
+          <label for="lastname" data-help="Type in a strong password">Password</label>
+        </div>
+        <div class="form-confirm-password">
+        <input id="confirm-password" placeholder="Confirm password" name="lastname" type="text" value="" size="30" maxlength="245" required>
+          <label for="confirm-password" data-help="Type in your password again">Confirm password</label>
+        </div>
+        <div class="form-submit">
+          <input name="submit" type="submit" id="submit" class="submit" value="Create Account">
+        </div>
+      </form>
+      <div>
+        <p>Already have an account? <a class="login" href="/login">Log in</a></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
