@@ -1,16 +1,16 @@
 /* Font Declarations */
 @font-face {
     font-family: 'Faculty Glyphic';
-    src: url('facultyglyphic-webfont.woff2') format('woff2'),
-         url('facultyglyphic-webfont.woff') format('woff');
+    src: url('./fonts/facultyglyphic-webfont.woff2') format('woff2'),
+         url('./fonts/facultyglyphic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ribeye';
-    src: url('ribeye-webfont.woff2') format('woff2'),
-         url('ribeye-webfont.woff') format('woff');
+    src: url('./fonts/ribeye-webfont.woff2') format('woff2'),
+         url('./fonts/ribeye-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,7 +24,7 @@
 
 body {
     font-family: 'Faculty Glyphic', Helvetica, sans-serif;
-    color: #666;
+    color: rgba(247, 248,	250, 0);
     height: 100vh;
     display: flex;
 }
