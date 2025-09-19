@@ -169,7 +169,7 @@ input[type="password"] {
 
 input:focus {
     outline: none;
-    border-color: #8BC34A;
+    border-color: #2196F3;
     background-color: #fff;
 }
 
@@ -181,6 +181,11 @@ input:invalid:not(:placeholder-shown) {
 input:valid:not(:placeholder-shown) {
     border-color: #8BC34A;
     background-color: rgba(139, 195, 74, 0.1);
+}
+
+/* Password field specific styles */
+input[type="password"]:invalid {
+    border-color: #E91E63;
 }
 
 /* Label Styles */
