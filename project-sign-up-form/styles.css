@@ -82,22 +82,24 @@ img.logo {
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .main h2 {
     font-family: 'Ribeye', serif;
     font-size: 24px;
-    padding: 0 210px 10px 60px;
+    padding: 0 210px 10px 30px;
     margin-bottom: 10px;
     color: #333;
+    text-align: left;
 }
 
 .subhead {
     font-size: 18px;
     margin-bottom: 40px;
-    padding: 0 210px 0 60px;
+    padding: 0 210px 0 30px;
     color: #666;
+    text-align: left;
 }
 
 .sign-up-section {
@@ -110,6 +112,7 @@ img.logo {
     font-size: 20px;
     margin-bottom: 20px;
     color: #333;
+    text-align: left;
 }
 
 /* Form Styles */
@@ -143,9 +146,11 @@ img.logo {
 }
 
 .form-submit {
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     width: 100%;
     padding: 0 30px;
+    text-align: left;
 }
 
 input[type="text"], 
@@ -180,23 +185,11 @@ input:valid:not(:placeholder-shown) {
 
 /* Label Styles */
 label {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    font-size: 12px;
-    color: #8BC34A;
-    display: none;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-input:focus + label,
-input:not(:placeholder-shown) + label {
     display: block;
-}
-
-input:invalid:not(:placeholder-shown) + label {
-    color: #b92326;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input::placeholder {
@@ -229,7 +222,8 @@ input:focus::placeholder {
 /* Login Link */
 .login-section {
     width: 100%;
-    padding: 0 210px 0 60px;
+    padding: 0 210px 0 30px;
+    text-align: left;
 }
 
 .login-link {
